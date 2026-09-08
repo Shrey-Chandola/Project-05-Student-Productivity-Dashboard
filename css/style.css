@@ -5,6 +5,27 @@
 }
 
 body{
-    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
     font-family: Arial, sans-serif;
+}
+
+.dashboard-header{
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-header h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p{
+    font-size: 1rem;
+    color: #666;
+}
+
+.dashboard-main{
+    padding: 30px 40px;
 }
