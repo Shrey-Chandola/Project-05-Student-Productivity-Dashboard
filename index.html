@@ -34,7 +34,7 @@
         </section>
         <section>
             <h2>Today's Tasks</h2>
-            <form>
+            <form class="task-input">
                 <label for="add-task">Add Tasks</label>
                 <input id="add-task" type="text" placeholder="ADD TASKS HERE">
                 <button id="task-btn" type="submit">Add Task</button>
@@ -55,8 +55,6 @@
                 </article>
                 <article class="task">
                     <p>Work on Portfolio Project</p>
-
-                    
                     <strong>Pending</strong>
                 </article>
             </div>
@@ -65,3 +63,45 @@
     <footer></footer>
 </body>
 </html>
+
+<!-- class Solution {
+public:
+    bool hasMatch(string s, string p) {
+      int pos=p.find('*'), preCount=0, postCount=0;
+      bool preFlag=false, postFlag=false;
+      string preStr="", postStr="";
+      preStr=p.substr(0,pos-1);
+      postStr=p.substr(pos+1,'\0');
+      for(int i=0; i<s.length(); i++)
+        {if(s[i]==preStr[i]) {preCount++;}
+         if(count==preStr.lentgh())
+            {preFlag=true;
+            }
+         if(s[i]==postStr[i]) {postCount++;}
+         if(s[i]==postStr.length())
+            {postFlag=true;
+            }
+         else {continue;}
+        }
+       if(preStr=='')
+            {if(postStr=='') {return false;}
+             else
+                {if(postFlag) {return true;}
+                 else {return false;}  
+                }
+            }
+        else
+            {if(postStr=='')
+                {if(preFlag) {return true;}
+                 else {return false;}
+                }
+             else
+                {if(preFlag)
+                    {if(postFlag) {return true;}
+                     else {return false;}
+                    }
+                 else {return false;}
+                }
+            }
+    }
+}; -->
